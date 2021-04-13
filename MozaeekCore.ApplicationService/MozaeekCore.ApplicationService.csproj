@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Query\Identity\**" />
+    <EmbeddedResource Remove="Query\Identity\**" />
+    <None Remove="Query\Identity\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MozaeekCore.ApplicationService.Contract\MozaeekCore.ApplicationService.Contract.csproj" />
+    <ProjectReference Include="..\MozaeekCore.Common\MozaeekCore.Common.csproj" />
+    <ProjectReference Include="..\MozaeekCore.Core\MozaeekCore.Core.csproj" />
+    <ProjectReference Include="..\MozaeekCore.Domain\MozaeekCore.Domain.csproj" />
+    <ProjectReference Include="..\MozaeekCore.Exception\MozaeekCore.Exception.csproj" />
+    <ProjectReference Include="..\MozaeekCore.Mapper\MozaeekCore.Mapper.csproj" />
+    <ProjectReference Include="..\MozaeekCore.Persistense.EF\MozaeekCore.Persistense.EF.csproj" />
+  </ItemGroup>
+
+</Project>

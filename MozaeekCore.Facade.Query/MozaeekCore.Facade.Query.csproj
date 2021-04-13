@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MozaeekCore.ApplicationService\MozaeekCore.ApplicationService.csproj" />
+    <ProjectReference Include="..\MozaeekCore.Core\MozaeekCore.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Announcement\" />
+  </ItemGroup>
+
+</Project>

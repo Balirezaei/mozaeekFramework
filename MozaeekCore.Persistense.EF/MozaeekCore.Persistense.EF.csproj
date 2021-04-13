@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MozaeekCore.Core\MozaeekCore.Core.csproj" />
+    <ProjectReference Include="..\MozaeekCore.Domain\MozaeekCore.Domain.csproj" />
+    <ProjectReference Include="..\MozaeekCore.ViewModel\MozaeekCore.ViewModel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.11" />
+  </ItemGroup>
+
+</Project>
